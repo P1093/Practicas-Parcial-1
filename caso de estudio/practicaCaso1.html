@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuarios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Registro de usuarios para una conferencia</h1>
+    <h2>Formulario para el registro de usuarios</h2>
+    <form name="envio" action="Registro.html" metod="get" autocomplete="off">
+        <table>
+            <tr>
+            <tr>
+                <td><label for="user" class="dat">Nombre</label></td>
+                <tr><td><input type="text" name="user" class="datos" placeholder="Nombre completo"></td></tr>
+            </tr>
+            <tr>
+                <td><label for="correo" class="dat">Correo eléctronico <label></td>
+                <tr><td><input type="email" id="correo" class="datos" placeholder="Introduce tu correo"></td></tr>
+            </tr>
+            <tr>
+                <td><label for="edad" class="dat">Edad </label></td>
+                <tr><td><input type="number" id="edad" class="datos" placeholder="Ingrese su edad"></td></tr>
+            </tr>
+            <tr>
+                <td><label for="telefono" class="dat">Teléfono </label></td>
+                <tr><td><input type="number" id="telefono" class="datos" placeholder="Ingrese su telefono"></td></tr>
+            </tr>
+            <tr>
+                <td><label for="ocupacion" class="dat">Ocupacion</label></td>
+                <td>
+                    <select name="combo" id="ocupacion" >
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Maestro">Docente</option>
+                        <option value="Director">Doctor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><br> Talla de camiseta</p>
+                    <p>
+                        <br><input type="radio" name="talla" value="chica" class="radio">S
+                        <input type="radio" name="talla" value="mediano" class="radio">M
+                        <input type="radio" name="talla" value="grande" class="radio">L
+                        <input type="radio" name="talla" value="extra-grande" class="radio">XL
+                    </p>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <br><p><b><label for="preferencias">Preferencias dieteticas</label></b></p></p><br>
+                        <p>
+                            <input type="checkbox" name="preferencia" value="vegetariano" class="opciones">Vegetariano<br>
+                            <input type="checkbox" name="preferencia" value="vegano" class="opciones">Vegano<br>
+                            <input type="checkbox" name="preferencia" value="sinGluten" class="opciones">Sin gluten<br>
+                            <input type="checkbox" name="preferencia" value="sinRestricciones" class="opciones">Sin restricciones<br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b><label for="temas" class="opciones">¿Cuál de los siguientes temas le gustaría conocer?</label></b></p><br>
+                        <p>
+                            <input type="checkbox" name="lenguajes" value="C++" class="opciones">C++<br>
+                            <input type="checkbox" name="lenguajes" value="JAVA" class="opciones">Java<br>
+                            <input type="checkbox" name="lenguajes" value="PHP" class="opciones">PHP<br>
+                            <input type="checkbox" name="lenguajes" value="CSHARP" class="opciones">C#<br>
+                            <input type="checkbox" name="lenguajes" value="JavaScript" class="opciones">JavaScript<br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b><label for="actividades">¿Recomendarías esta conferencia?</label></b></p><br>
+                        <p>
+                            <input type="radio" name="recomendar" value="si" class="opciones4">Si<br>
+                            <input type="radio" name="recomendar" value="no" class="opciones4">No<br>
+                            <input type="radio" name="recomendar" value="talvez" class="opciones4">Tal vez<br>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <input type="submit" value="Enviar" class="boton">
+                        </center>
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
